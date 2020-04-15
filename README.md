@@ -3,6 +3,6 @@
 ## How to install hamler
 
 ```
-brew tap hamler/hamler
-brew install hamler/hamler
+brew tap hamler-lang/hamler
+brew install hamler
 ```
