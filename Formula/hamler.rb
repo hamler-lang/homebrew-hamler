@@ -1,7 +1,7 @@
 class Hamler < Formula
   homepage "https://emqx.io"
   url "https://repos.emqx.io/hamler/hamler-0.0.1.zip"
-  sha256 "7d09b51ec5db515adb4c72edbb1cd28dd14c11ac78d1121d71f4dd99d6e9d56e"
+  sha256 "6e80fbb8e4a74024bf656173e6263308b7f41278a53cc5bbae953394500626ff"
   version "0.0.1"
 
   depends_on "erlang"
