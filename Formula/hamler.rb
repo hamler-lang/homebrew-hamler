@@ -1,8 +1,8 @@
 class Hamler < Formula
   homepage "https://emqx.io"
-  url "https://repos.emqx.io/hamler/hamler-0.0.1.zip"
-  sha256 "6e80fbb8e4a74024bf656173e6263308b7f41278a53cc5bbae953394500626ff"
-  version "0.0.1"
+  url "https://repos.emqx.io/hamler/hamler-0.0.2.zip"
+  sha256 "bac1248011f00dd9ddc015ee0ae2de14d7b9194447e972511cbd0ff43dbdac30"
+  version "0.0.2"
 
   depends_on "erlang"
 
@@ -36,4 +36,15 @@ class Hamler < Formula
     EOS
   end
 
+  def post_install
+    system "ln", "-s", "#{prefix}/lib/hanmler", "/usr/local/lib/erlang/lib/hamler-#{version}"
+  end
+
+  test do
+    system bin/"hamler", "--version"
+  end
+
+  def pre_uninstall
+    system "rm -f /usr/local/lib/erlang/lib/hamler-#{version}"
+  end
 end
