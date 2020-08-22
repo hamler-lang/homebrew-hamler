@@ -4,7 +4,7 @@ class Hamler < Formula
   sha256 "eeb1a692a79127f62e6a304586860ed8bebe1bcb81362dde270dbbf30cb2a0a8"
   version "0.2"
 
-  depends_on "erlang" => "22.1"
+  depends_on "erlang" => "23"
 
   def install
     prefix.install Dir["*"]
