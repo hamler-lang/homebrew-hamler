@@ -1,8 +1,8 @@
 class Hamler < Formula
   homepage "https://hamler-lang.org/"
-  url "https://s3-us-west-2.amazonaws.com/packages.emqx.io/hamler/homebrew/hamler-0.2.1.tgz"
-  sha256 "ff0b975068628fb29174cc0b4594c6217d94333333a53b75fec3246da4065495"
-  version "0.2.1"
+  url "https://s3-us-west-2.amazonaws.com/packages.emqx.io/hamler/homebrew/hamler-0.2.2.tgz"
+  sha256 "e2eb5b1240ce0c20886bc90d111f084efe6022ea2142e42e288c3ada6147831f"
+  version "0.2.2"
 
   depends_on "erlang" => "23"
 
